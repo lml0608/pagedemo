@@ -5,15 +5,37 @@ __author__:liubin
 '''
 
 
+from selenium import webdriver
+import time
 
-def outer():
+driver = webdriver.PhantomJS()
+driver.get("https://www.baidu.com")
 
-    def inner():
+print(driver.title)
 
-        print("hello")
+time.sleep(10)
+driver.find_element_by_id("kw").send_keys("selenium")
 
-    return inner
+driver.find_element_by_id("su").click()
 
-foo = outer()
 
-foo()
+
+
+
+
+
+
+driver.quit()
+
+
+# def outer():
+#
+#     def inner():
+#
+#         print("hello")
+#
+#     return inner
+#
+# foo = outer()
+#
+# foo()

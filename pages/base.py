@@ -102,6 +102,10 @@ class Liubin(object):
 
         return elements
 
+    def switch_frame(self, loc):
+
+        '''切换iframe'''
+        return self.driver.switch_to_frame(loc)
 
     def click(self,locator):
         '''点击操作'''

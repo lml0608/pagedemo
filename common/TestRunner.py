@@ -23,6 +23,8 @@ report_path = os.path.join(os.path.dirname(os.path.dirname(__file__)),"test_repo
 now = time.strftime("%Y_%m_%d %H_%M_%S")
 
 report_abspath=os.path.join(report_path, now+"report.html")
+
+
 #返回所有用例
 def all_case():
     discover = unittest.defaultTestLoader.discover(case_path,pattern="test*.py",top_level_dir=None)
@@ -31,6 +33,8 @@ def all_case():
     return discover
 # suite = unittest.TestLoader().discover(case_path)
 # print(suite)
+
+
 if __name__ == '__main__':
 
     #all_case()

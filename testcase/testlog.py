@@ -6,10 +6,15 @@ from selenium import webdriver
 
 from common.logger import Log
 
-log = Log()
+from common.getlogger import get_logger
+
+from libs.browser import browser
+
+#log = Log()
+log = get_logger()
 
 class Test(unittest.TestCase):
-    driver = webdriver.Firefox()
+    driver = browser('chrome')
 
     def setUp(self):
 

@@ -27,7 +27,7 @@ class Screen(object):
 
                 nowTime = time.strftime("%Y_%m_%d_%H_%M_%S")
 
-                self.driver.get_screenshot_as_file('%s.jpg' % nowTime)
+                self.driver.get_screenshot_as_file('/Users/liubin/PycharmProjects/pagedemo/screenshots/%s.jpg' % nowTime)
 
                 raise
 

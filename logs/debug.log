@@ -1,2 +1,28 @@
-2018-02-24 10:25:35 buynowPage.py[line:78] INFO    : Open url : http://portaltest.wgmf.com/index.html
-2018-02-24 10:27:06 buynowPage.py[line:78] INFO    : Open url : http://portaltest.wgmf.com/index.html
+2018-02-28 20:47:39 getlogger.py[line:24] INFO    : hi
+2018-02-28 20:47:56 getlogger.py[line:24] INFO    : hi
+2018-02-28 20:48:20 getlogger.py[line:24] INFO    : hi
+2018-02-28 20:48:38 getlogger.py[line:24] INFO    : hi
+2018-02-28 20:48:46 testlog.py[line:50] INFO    : -----用例测试结束--------
+2018-02-28 20:48:46 testlog.py[line:50] INFO    : -----用例测试结束--------
+2018-02-28 20:48:59 getlogger.py[line:24] INFO    : hi
+2018-02-28 20:49:22 getlogger.py[line:24] INFO    : hi
+2018-02-28 20:49:41 getlogger.py[line:24] INFO    : hi
+2018-02-28 20:49:48 testlog.py[line:28] INFO    : ---测试用例开始----
+2018-02-28 20:49:48 testlog.py[line:32] INFO    : 输入内容：selenium
+2018-02-28 20:49:48 testlog.py[line:36] INFO    : 点击按钮：id=su
+2018-02-28 20:49:50 testlog.py[line:42] INFO    : 获取title内容：selemiu_百度搜索
+2018-02-28 20:49:50 testlog.py[line:50] INFO    : -----用例测试结束--------
+2018-02-28 21:02:55 getlogger.py[line:24] INFO    : hi
+2018-02-28 21:02:56 test_buynow_page.py[line:84] INFO    : -----------测试开始----------------
+2018-02-28 21:03:17 logger.py[line:65] INFO    : -----------点击登陆商城----------------
+2018-02-28 21:03:17 logger.py[line:65] INFO    : -----------输入员工工号----------------
+2018-02-28 21:03:17 logger.py[line:65] INFO    : -----------输入登陆密码----------------
+2018-02-28 21:03:17 logger.py[line:65] INFO    : -----------点击登陆按钮----------------
+2018-02-28 21:03:28 test_buynow_page.py[line:128] INFO    : -----------测试结束----------------
+2018-02-28 21:04:59 getlogger.py[line:24] INFO    : hi
+2018-02-28 21:05:01 test_buynow_page.py[line:84] INFO    : -----------测试开始----------------
+2018-02-28 21:05:22 login_page.py[line:51] INFO    : -----------点击登陆商城----------------
+2018-02-28 21:05:22 login_page.py[line:57] INFO    : -----------输入员工工号----------------
+2018-02-28 21:05:22 login_page.py[line:62] INFO    : -----------输入登陆密码----------------
+2018-02-28 21:05:22 login_page.py[line:68] INFO    : -----------点击登陆按钮----------------
+2018-02-28 21:05:34 test_buynow_page.py[line:128] INFO    : -----------测试结束----------------

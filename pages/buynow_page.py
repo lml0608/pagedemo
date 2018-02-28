@@ -9,10 +9,11 @@ from selenium.webdriver.common.by import By
 from .base import BasePage
 import time
 from common.logger import Log
+from common.getlogger import get_logger
 
 class BuynowPage(BasePage):
 
-    log = Log()
+    log = get_logger()
 
 
     #秒杀按钮

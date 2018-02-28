@@ -17,13 +17,13 @@ def browser(browser='firefox'):
             return driver
 
         elif browser == "chrome":
-            # driver = webdriver.Chrome(
-            #     executable_path='/Users/liubin/PycharmProjects/pagedemo/tools/chromedriver')
+            driver = webdriver.Chrome(
+                executable_path='/Users/liubin/PycharmProjects/pagedemo/tools/chromedriver')
 
             # driver = webdriver.Chrome(
             #     executable_path='C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe')
-            driver = webdriver.Chrome(
-                executable_path='D:\\app\\pagedemo\\tools\\chromedriver.exe')
+            #driver = webdriver.Chrome(
+                #executable_path='D:\\app\\pagedemo\\tools\\chromedriver.exe')
 
 
 

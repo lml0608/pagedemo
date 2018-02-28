@@ -3,9 +3,9 @@
 import logging,time,os
 
 
-#log_path = '/Users/liubin/PycharmProjects/pagedemo/logs'
+log_path = '/Users/liubin/PycharmProjects/pagedemo/logs'
 
-log_path = 'D:\\app\pagedemo\logs'
+#log_path = 'D:\\app\pagedemo\logs'
 
 
 
@@ -26,7 +26,7 @@ class Log(object):
 
         #日志输出格式
 
-        self.fmt = '[%(asctime)s]- %(filename)s-[line:%(lineno)d]-%(levelname)s: %(message)s'
+        self.fmt = '[%(asctime)s]- %(name)s-[line:%(lineno)d]-%(levelname)s: %(message)s'
 
         self.formatter = logging.Formatter(self.fmt)
 
@@ -103,16 +103,16 @@ class Log(object):
         self.__console('error', message)
 
 
-if __name__ == '__main__':
-
-    log = Log()
-
-
-    log.info(u'----测试开始----')
-
-    log.info(u"----输入密码----")
-
-    log.warning(u"----测试结果----")
+# if __name__ == '__main__':
+#
+#     log = Log()
+#
+#
+#     log.info(u'----测试开始----')
+#
+#     log.info(u"----输入密码----")
+#
+#     log.warning(u"----测试结果----")
 
 
 

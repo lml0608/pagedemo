@@ -13,10 +13,12 @@ import time
 
 from common.logger import Log
 
+from common.getlogger import get_logger
+
 class LoginPage(BasePage):
     ''''登录'''
 
-    log = Log()
+    log = get_logger()
 
 
     #登陆元素

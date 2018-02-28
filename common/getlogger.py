@@ -15,16 +15,16 @@ def get_logger():
     return logging.getLogger()
 
 
-# def call_me():
-#
-#     logger = get_logger()
-#     # filepath = os.path.join(os.path.dirname(__file__), 'logging.conf')
-#     # print(filepath)
-#
-#     logger.info("hi")
-# call_me()
+def call_me():
 
-#"D:/dev/pagedemo/testcase"
+    logger = get_logger()
+    # filepath = os.path.join(os.path.dirname(__file__), 'logging.conf')
+    # print(filepath)
+
+    logger.info("hi")
+call_me()
+
+"D:/dev/pagedemo/testcase"
 
 
 

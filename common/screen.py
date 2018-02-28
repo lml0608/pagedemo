@@ -34,21 +34,21 @@ class Screen(object):
         return inner
 
 
-import unittest
+#import unittest
 
 
-class Test(unittest.TestCase):
-
-    driver = webdriver.Firefox()
-
-    def setUp(self):
-
-        self.driver.get("http://www.baidu.com")
-
-
-    @Screen(driver)
-    def test01(self):
-
-        self.driver.find_element_by_id("11kw").send_keys("python")
-        self.driver.find_element_by_id("su").click()
+# class Test(unittest.TestCase):
+#
+#     driver = webdriver.Firefox()
+#
+#     def setUp(self):
+#         #driver = webdriver.Firefox()
+#         self.driver.get("http://www.baidu.com")
+#
+#
+#     @Screen(driver)
+#     def test01(self):
+#
+#         self.driver.find_element_by_id("11kw").send_keys("python")
+#         self.driver.find_element_by_id("su").click()
 

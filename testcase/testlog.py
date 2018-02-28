@@ -1,29 +1,23 @@
 
+import time
 import unittest
-
-from common.logger import Log
 
 from selenium import webdriver
 
-from pages.base import browser,Liubin
-
-import time
-
+from common.logger import Log
 
 log = Log()
 
 class Test(unittest.TestCase):
-
+    driver = webdriver.Firefox()
 
     def setUp(self):
-        self.driver = webdriver.Chrome(
-            executable_path='/Users/liubin/PycharmProjects/pagedemo/tools/chromedriver')
+
 
 
         self.driver.get("http://www.baidu.com")
 
         self.driver.implicitly_wait(20)
-
     def test_01(self):
 
         log.info("---测试用例开始----")

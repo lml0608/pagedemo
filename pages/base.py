@@ -11,46 +11,9 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
 
-def browser(browser='firefox'):
-    ''''打开浏览器函数，"firefox"、"chrome"、"ie"、"phantomjs"'''
-
-    try:
-
-        if browser == "firefox":
-
-            driver = webdriver.Firefox()
-            return driver
-
-        elif browser == "chrome":
-            # driver = webdriver.Chrome(
-            #     executable_path='/Users/liubin/PycharmProjects/pagedemo/tools/chromedriver')
-
-            # driver = webdriver.Chrome(
-            #     executable_path='C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe')
-            driver = webdriver.Chrome(
-                executable_path='D:\\app\\pagedemo\\tools\\chromedriver.exe')
 
 
-
-
-            return driver
-        elif browser == "ie":
-            driver = webdriver.Ie()
-            return driver
-
-        elif browser == "phantomjs":
-
-            driver = webdriver.PhantomJS()
-            return driver
-
-        else:
-
-            print("Not found this browser, You can enter 'firefox', 'chrome', 'ie' or 'phantomjs'")
-    except Exception as msg:
-
-        print("%s" % msg)
-
-class Liubin(object):
+class BasePage(object):
     '''封装'''
 
     def __init__(self,driver):
@@ -324,31 +287,31 @@ class Liubin(object):
 
 
 
-if __name__ == '__main__':
-
-    driver = browser()
-
-    driver_n = Liubin(driver)
-
-    driver_n.open("http://www.baidu.com",t='百度一下，你就知道')
-
-    print(driver_n.get_title())
-
-    #driver_n.quit()
-
-
-    input_loc = ("id","kw")
-
-    button_loc = ("id", "su")
-
-    set_loc = ("link text", "设置")
-
-
-    driver_n.send_keys(input_loc,"selenium")
-
-    driver_n.click(button_loc)
-
-    driver_n.move_to_element(set_loc)
+# if __name__ == '__main__':
+#
+#     driver = browser()
+#
+#     driver_n = Liubin(driver)
+#
+#     driver_n.open("http://www.baidu.com",t='百度一下，你就知道')
+#
+#     print(driver_n.get_title())
+#
+#     #driver_n.quit()
+#
+#
+#     input_loc = ("id","kw")
+#
+#     button_loc = ("id", "su")
+#
+#     set_loc = ("link text", "设置")
+#
+#
+#     driver_n.send_keys(input_loc,"selenium")
+#
+#     driver_n.click(button_loc)
+#
+#     driver_n.move_to_element(set_loc)
 
 
 

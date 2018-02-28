@@ -3,7 +3,9 @@
 import logging,time,os
 
 
-log_path = '/Users/liubin/PycharmProjects/pagedemo/logs'
+#log_path = '/Users/liubin/PycharmProjects/pagedemo/logs'
+
+log_path = 'D:\\app\pagedemo\logs'
 
 
 
@@ -24,18 +26,30 @@ class Log(object):
 
         #日志输出格式
 
-        self.formatter = logging.Formatter('[%(asctime)s]- [%(filename)s][line:%(lineno)d]-%(levelname)s: %(message)s')
+        self.fmt = '[%(asctime)s]- %(filename)s-[line:%(lineno)d]-%(levelname)s: %(message)s'
+
+        self.formatter = logging.Formatter(self.fmt)
+
+
 
 
     def __console(self,level,message):
 
         #写到文件
-        fh = logging.FileHandler(self.logname,'a',encoding='utf-8')
+        # fh = logging.FileHandler(self.logname,'a',encoding='utf-8')
+        #
+        # fh.setLevel(logging.DEBUG)
+        # fh.setFormatter(self.formatter)
+        #
+        # self.logger.addHandler(fh)
 
-        fh.setLevel(logging.DEBUG)
-        fh.setFormatter(self.formatter)
-
-        self.logger.addHandler(fh)
+        logging.basicConfig(
+                            level=logging.DEBUG,
+                            format=self.fmt,
+                            filename=self.logname,
+                            filemode='a',
+                            datefmt='%a, %d %b %Y %H:%M:%S'
+                            )
 
 
         #输出到控制台
@@ -63,11 +77,11 @@ class Log(object):
 
         #避免日志输入重复
         self.logger.removeHandler(ch)
-        self.logger.removeHandler(fh)
+        #self.logger.removeHandler(fh)
 
         #关闭打开的文件
 
-        fh.close()
+        #fh.close()
 
 
 
@@ -89,16 +103,16 @@ class Log(object):
         self.__console('error', message)
 
 
-# if __name__ == '__main__':
-#
-#     log = Log()
-#
-#
-#     log.info("----测试开始----")
-#
-#     log.info("----输入密码----")
-#
-#     log.warning("----测试结果----")
+if __name__ == '__main__':
+
+    log = Log()
+
+
+    log.info(u'----测试开始----')
+
+    log.info(u"----输入密码----")
+
+    log.warning(u"----测试结果----")
 
 
 

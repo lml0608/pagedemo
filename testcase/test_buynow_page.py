@@ -23,7 +23,7 @@ from libs.browser import browser
 
 
 class TestBuynowPage(unittest.TestCase):
-    driver = browser('chrome')
+    driver = browser('phantomjs')
     log = get_logger()
 
     def setUp(self):

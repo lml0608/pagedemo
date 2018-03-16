@@ -1,0 +1,12 @@
+2018-03-01 08:44:16 getlogger.py[line:24] INFO    : hi
+2018-03-01 08:44:36 testlog.py[line:50] INFO    : -----用例测试结束--------
+2018-03-01 08:44:37 testlog.py[line:50] INFO    : -----用例测试结束--------
+2018-03-01 08:45:06 getlogger.py[line:24] INFO    : hi
+2018-03-01 08:45:21 testlog.py[line:50] INFO    : -----用例测试结束--------
+2018-03-01 08:45:22 testlog.py[line:50] INFO    : -----用例测试结束--------
+2018-03-01 08:45:57 getlogger.py[line:24] INFO    : hi
+2018-03-01 08:46:11 testlog.py[line:28] INFO    : ---测试用例开始----
+2018-03-01 08:46:12 testlog.py[line:32] INFO    : 输入内容：selenium
+2018-03-01 08:46:13 testlog.py[line:36] INFO    : 点击按钮：id=su
+2018-03-01 08:46:15 testlog.py[line:42] INFO    : 获取title内容：selemiu_百度搜索
+2018-03-01 08:46:19 testlog.py[line:50] INFO    : -----用例测试结束--------

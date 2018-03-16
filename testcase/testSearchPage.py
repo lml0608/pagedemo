@@ -49,6 +49,8 @@ class TestSearchPage(unittest.TestCase):
         baidu_page.click_search()
 
 
+
+
         #调用方法输入搜索关键字
         #search_Page.input_search_text(text)
 

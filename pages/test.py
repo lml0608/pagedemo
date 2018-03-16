@@ -4,29 +4,17 @@ __author__:liubin
 
 '''
 
+def test(starttime):
 
-from selenium import webdriver
-import time
+    js1 = "document.getElementById('vstartTime').value=\"" + starttime + "\";"
 
-driver = webdriver.PhantomJS()
-driver.get("https://www.baidu.com")
 
-print(driver.title)
-
-time.sleep(10)
-driver.find_element_by_id("kw").send_keys("selenium")
-
-driver.find_element_by_id("su").click()
+    print(starttime)
+    print(js1)
 
 
 
-
-
-
-
-
-driver.quit()
-
+test("niho")
 
 # def outer():
 #

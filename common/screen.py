@@ -5,6 +5,7 @@ __author__:liubin
 '''
 
 from selenium import webdriver
+import os
 
 class Screen(object):
 
@@ -27,7 +28,9 @@ class Screen(object):
 
                 nowTime = time.strftime("%Y_%m_%d_%H_%M_%S")
 
-                self.driver.get_screenshot_as_file('/Users/liubin/PycharmProjects/pagedemo/screenshots/%s.jpg' % nowTime)
+                filepath = os.path.join(os.path.dirname(os.getcwd()),'screenshots')
+
+                self.driver.get_screenshot_as_file(filepath +'/%s.jpg' % nowTime)
 
                 raise
 
